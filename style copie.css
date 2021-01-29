@@ -331,19 +331,20 @@ section:nth-of-type(3){
 }
 
 #radio1:checked ~ .first {
-    margin-left: 0;
+    transform: translateX(0);
 }
 
 #radio2:checked ~ .first {
-    margin-left: -20%;
+   
+    transform: translateX(200%);
 }
 
 #radio3:checked ~ .first {
-    margin-left: -40%;
+    transform: translateX(400%);
 }
 
 #radio4:checked ~ .first {
-    margin-left: -60%;
+    transform: translateX(600%);
 }
 
 /* automatic navigation */
@@ -395,11 +396,11 @@ section:nth-of-type(3){
     margin-top: 40px;
 }
 
-ul {
+div ul {
     display: flex;
 }
 
-ul li {
+div ul li {
     position: relative;
     display: block;
     color:rgb(207, 204, 204);
@@ -419,7 +420,7 @@ div p {
     font-size: 1.5rem;
 }
 
-ul li:before {
+div ul li:before {
     position: absolute;
     content: " ";
     top: 0;
@@ -432,7 +433,7 @@ ul li:before {
     transform: scale(0,9);
 }
 
-ul li:hover:before {
+div ul li:hover:before {
     transform: scale(1.2);
 
 }
