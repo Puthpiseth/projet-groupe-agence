@@ -15,6 +15,8 @@ if (window.pageYOffset > 0) {
 }
 });
 
+
+
 let counter = 1;
 
 setInterval(function(){
